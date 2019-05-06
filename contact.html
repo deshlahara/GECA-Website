@@ -1,0 +1,211 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Government College of Engineering</title>
+        <meta name="description" content="College Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/vendor/icon.css" rel="stylesheet">
+        <link href="css/vendor/material-components-web.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <link href="css/main.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-light brandBar">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" width="30%" src="img/geca.png" class="d-inline-block align-top" alt="">
+            </a>
+        </nav>
+
+
+        <header id="header" class="navbar-expand-md mdc-elevation--z4 sticky-top">
+
+            <div class="container">
+
+                <div class="container logo">
+                    <!--          <a href="index.html"><img src="img/geca.png" class="d-inline-block align-center" alt=""></a>-->
+                </div>
+
+                <nav class="main-nav float-left w-100 d-lg-block">
+                    <ul>
+                        <li class="elem active">
+
+                            <a href="index.html">HOME</a></li>
+                        <li class="elem drop-down"><a href="#">ABOUT GECA</a>
+                            <ul>
+                                <li><a href="#">Mission & Vision</a></li>
+                                <li><a href="#">Principal's Message</a></li>
+                                <li><a href="#">Leadership, BOM & Deans</a></li>
+                                <li><a href="#">How To Reach</a></li>
+                                <li><a href="#">Photo Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="elem"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <center id="intro">
+            <div style="position: relative; margin-top: -5%;" id="typed" class="container-fluid text-center"></div>
+
+
+            <div class="container text-center">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=government%20college%20of%20engineering%2C%20aurangabad&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: center;
+                            height: 500px;
+                            width: 800px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 400px;
+                            width: 400px;
+                        }
+                    </style>
+                </div>
+
+            </div>
+
+
+        </center>
+
+
+        <div class="text-center container-fluid" id="marble">
+            <img width="50%" src="img/marble.png" alt="marble">
+        </div>
+
+        <div class="container-fluid" id="particles-js"></div>
+
+
+
+        <footer style="font-family: Roboto; letter-spacing: 5px; position: absolute; left: 0;" class="container-fluid page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">Copyright © Government College of Engineering, Aurangabad. All rights reserved.
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+        <!-- JavaScript Libraries -->
+        <script src="js/vendor/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/vendor/typeit.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.your-class').slick({
+                    setting - name: setting - value
+                });
+            });
+        </script>
+
+        <script>
+            new TypeIt('#typed', {
+                    speed: 200,
+                    waitUntilVisible: true,
+                    cursorSpeed: 1000,
+                    html: true,
+                    cursor: true,
+                })
+
+                .type('<strong>WELCOME TO GECA</strong>')
+                .delete(4)
+                .type('<strong>THE FUTURE</strong>')
+                .delete(10)
+                .type('<strong>LEARN</strong>')
+                .delete(5)
+                .type('<strong>DEVELOP</strong>')
+                .delete(7)
+                .type('<strong>DESIGN</strong>')
+                .delete(6)
+                .type('<strong>INNOVATE</strong>')
+                .delete(8)
+                .type('<strong>RESEARCH</strong>')
+                .delete(8)
+                .type('<strong>AURANGABAD</strong>')
+
+                .go();
+        </script>
+
+
+        <script>
+            $(document).ready(function() {
+                $("#myCarousel").on("slide.bs.carousel", function(e) {
+                    var $e = $(e.relatedTarget);
+                    var idx = $e.index();
+                    var itemsPerSlide = 3;
+                    var totalItems = $(".carousel-item").length;
+
+                    if (idx >= totalItems - (itemsPerSlide - 1)) {
+                        var it = itemsPerSlide - (totalItems - idx);
+                        for (var i = 0; i < it; i++) {
+                            // append slides to end
+                            if (e.direction == "left") {
+                                $(".carousel-item")
+                                    .eq(i)
+                                    .appendTo(".carousel-inner");
+                            } else {
+                                $(".carousel-item")
+                                    .eq(0)
+                                    .appendTo($(this).find(".carousel-inner"));
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/particles.min.js"></script>
+        <script src="js/vendor/stars.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.your-class').slick({
+                    setting - name: setting - value
+                });
+            });
+        </script>
+
+
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+
+
+
+
+
+    </body>
+
+    </html>
